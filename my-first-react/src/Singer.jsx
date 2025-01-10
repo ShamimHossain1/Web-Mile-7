@@ -1,8 +1,9 @@
-export default function Singer({singer, age}){
+export default function Singer(singer){
+    // console.log(singer);
     return(
         <div>
-            <h1>{singer}</h1>
-            <p>Age: {age}</p>
+            <h1>Singer Name: </h1>
+            <p>Age: </p>
         </div>
     )
 }

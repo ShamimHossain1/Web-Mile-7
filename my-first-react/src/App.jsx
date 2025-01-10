@@ -9,10 +9,11 @@ function App() {
 
   const actors = ['rock', 'john cena', 'michael jackson'];
   const singers = [
-    { name: 'arjit sing', age: 20 },
-    { name: 'honey singh', age: 40 },
-    { name: 'atif ashlam', age: 50 }
+    { id: 1, name: 'arjit sing', age: 20 },
+    { id: 2, name: 'honey singh', age: 40 },
+    { id: 3, name: 'atif ashlam', age: 50 }
   ];
+
 
   return (
     <>
@@ -24,11 +25,15 @@ function App() {
       <Todo task="learn JSX"></Todo> */}
 
       <Actor name="Sakib Khan"></Actor>
-      {
+      {/* {
         actors.map(actor => <Actor name={actor}></Actor>)
+      } */}
+      {
+        singers.map(singer => 
+          <Singer singer={singer} key={singer.id}></Singer>
+        )
       }
 
-      
 
     </>
   )
