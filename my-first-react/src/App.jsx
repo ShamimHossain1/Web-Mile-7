@@ -8,28 +8,34 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Hello world</h1>
+      <Developer></Developer>
+      <Device name ="laptop"></Device>
     </>
   )
 }
+
+function Developer() {
+  const developerStyle = {
+    backgroundColor: 'lightblue',
+    padding: '20px',
+    border: '1px solid black',
+    borderRadius: '10px',
+    width: '50%',
+    margin: '20px auto'
+
+  }
+  return (
+    <div style={developerStyle}>
+      <h1>Developer</h1> 
+    </div>
+  )
+}
+
+function Device(props){
+  console.log(props);
+  return <h2>This device is: {props.name}</h2>
+}
+
 
 export default App
