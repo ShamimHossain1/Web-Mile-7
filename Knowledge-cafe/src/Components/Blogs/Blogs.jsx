@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import Blog from "./Blog/Blog";
 
 
 const Blogs = () => {
@@ -12,13 +13,11 @@ const Blogs = () => {
         .then(data => setData(data))  
     },[])
 
-    const {author, author_img, cover, hastags, id, posted_data, reading_time, title} = data;
+    
 
     return (
-        <div>
-          
-          
-            
+        <div className="md:w-2/3">
+         <Blog blog={data}></Blog>
         </div>
     );
 };
