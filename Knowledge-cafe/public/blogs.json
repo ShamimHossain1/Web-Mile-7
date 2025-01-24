@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "../src/images/1.jpg",
+      "title": "Mastering JavaScript",
+      "author": "John Doe",
+      "author_img": "../src/images/girl2.jpg",
+      "posted_date": "2025-01-20",
+      "reading_time": "5 min read",
+      "hashtags": ["JavaScript", "Programming", "Web Development"]
+    },
+    {
+      "id": 2,
+      "cover": "../src/images/2.jpg",
+      "title": "The Future of AI",
+      "author": "Jane Smith",
+      "author_img": "../src/images/girl1.jpg",
+      "posted_date": "2025-01-18",
+      "reading_time": "7 min read",
+      "hashtags": ["AI", "Technology", "Innovation"]
+    },
+    {
+      "id": 3,
+      "cover": "../src/images/3.jpg",
+      "title": "Healthy Living Tips",
+      "author": "Mike Johnson",
+      "author_img": "../src/images/boy1.png",
+      "posted_date": "2025-01-15",
+      "reading_time": "3 min read",
+      "hashtags": ["Health", "Lifestyle", "Wellness"]
+    },
+    {
+      "id": 4,
+      "cover": "../src/images/4.jpg",
+      "title": "Exploring Space: What's Next?",
+      "author": "Emily Davis",
+      "author_img": "../src/images/boy2.png",
+      "posted_date": "2025-01-10",
+      "reading_time": "8 min read",
+      "hashtags": ["Space", "Astronomy", "Science"]
+    },
+    {
+      "id": 5,
+      "cover": "../src/images/1.jpg",
+      "title": "10 Steps to Financial Freedom",
+      "author": "Chris Brown",
+      "author_img": "../src/images/boy1.png",
+      "posted_date": "2025-01-05",
+      "reading_time": "6 min read",
+      "hashtags": ["Finance", "Money", "Personal Growth"]
+    }
+  ]
+  
