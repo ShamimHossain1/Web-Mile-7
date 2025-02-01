@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "cover": "../src/images/2.jpg",
+      "cover": "../src/images/4.jpg",
       "title": "The Future of AI",
       "author": "Jane Smith",
       "author_img": "../src/images/girl1.jpg",
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "cover": "../src/images/3.jpg",
+      "cover": "../src/images/1.jpg",
       "title": "Healthy Living Tips",
       "author": "Mike Johnson",
       "author_img": "../src/images/boy1.png",
