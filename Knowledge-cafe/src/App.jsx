@@ -13,8 +13,8 @@ function App() {
     <div className='md:mx-80 mx-5'>
       <Header></Header>
       <div className='md:flex'>
-        <Blogs setReadTime={setReadTime} readTime={readTime}></Blogs>
-        <Bookmarks readTime={readTime} ></Bookmarks>
+        <Blogs setReadTime={setReadTime} readTime={readTime} bookMark={bookMark} setBookMark={setBookMark}></Blogs>
+        <Bookmarks readTime={readTime} bookMark={bookMark} ></Bookmarks>
         
         </div>
     </div>

@@ -2,12 +2,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
-const Blog = ({blog, setReadTime,readTime}) => {
+const Blog = ({blog, setReadTime,readTime,bookMark, setBookMark}) => {
     const {author, author_img, cover, hashtags, posted_date, reading_time, title} = blog;
     const handleRead = () => {
       const extractedTime = parseInt(reading_time, 10) || 0;  
         setReadTime(readTime + extractedTime); 
     };
+    const handleBookmark = () => {
+        setBookMark([...bookMark, blog]);
+       
+    }
     return (
         <div>
               <div>
@@ -23,7 +27,7 @@ const Blog = ({blog, setReadTime,readTime}) => {
                 </div>
                 <div className='flex items-center gap-3'>
                 <p className="text-sm font-light text-gray-500">{reading_time}</p>
-                <button><FontAwesomeIcon icon={faBookmark} /></button>
+                <button onClick={handleBookmark}><FontAwesomeIcon icon={faBookmark} /></button>
                 </div>
             </div>
                                                                                                                        
