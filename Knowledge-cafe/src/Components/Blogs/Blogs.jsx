@@ -3,7 +3,8 @@ import { useState } from "react";
 import Blog from "./Blog/Blog";
 
 
-const Blogs = () => {
+const Blogs = ({setReadTime,readTime}) => {
+
 
     const [data, setData] = useState([]);
 
@@ -16,10 +17,10 @@ const Blogs = () => {
      
 
     return (
-        <div className="md:w-2/3">
+        <div className="md:w-2/3 pr-6">
         {
             data.map((blog) => (
-                <Blog key={blog.id} blog={blog} />
+                <Blog key={blog.id} blog={blog} setReadTime={setReadTime} readTime={readTime} />
             ))
         }
         </div>

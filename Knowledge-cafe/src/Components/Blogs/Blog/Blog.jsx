@@ -2,12 +2,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
-const Blog = ({blog}) => {
+const Blog = ({blog, setReadTime,readTime}) => {
     const {author, author_img, cover, hashtags, posted_date, reading_time, title} = blog;
-    // console.log(posted_date);
+    const handleRead = () => {
+      const extractedTime = parseInt(reading_time, 10) || 0;  
+        setReadTime(readTime + extractedTime); 
+    };
     return (
         <div>
-              <div className="mt-4">
+              <div>
                 <img src={cover} alt={title} className="w-full h-64 object-cover rounded-lg" />
             </div>
             <div className="flex items-center justify-between mt-5">
@@ -23,7 +26,7 @@ const Blog = ({blog}) => {
                 <button><FontAwesomeIcon icon={faBookmark} /></button>
                 </div>
             </div>
-          
+                                                                                                                       
             <div className="mt-4">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">{title}</h2>
                 {
@@ -31,7 +34,7 @@ const Blog = ({blog}) => {
                         <a key={idx} className="mt-2 text-sm font-light text-gray-500"> #{hastag}</a>
                     ))
                 } <br />
-                <button className='text-blue-600 underline font-semibold'>Mark as read</button>
+                <button onClick={handleRead} className='text-blue-600 underline font-semibold'>Mark as read</button>
                 
             </div>
             <hr  className='text-gray-300 my-10'/>
